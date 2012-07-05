@@ -1,7 +1,15 @@
 <?php
 
 /**
- * @author sopheak on
+ * JQuery plugin that displays a timeout popover after a certain period of time.
+ * @see http://www.yiiframework.com/extension/timeout-dialog
+ * @see https://github.com/digitick/yii-timeout-dialog
+ *
+ * @copyright © 2012, Digitick <www.digitick.net> (PHP)
+ * @copyright © 2011, Rodrigo Neri <@rigoneri> (Javascript)
+ * @license MIT
+ * @version 1.0
+ * @author Sopheak On
  */
 class ETimeoutDialog extends CWidget
 {
