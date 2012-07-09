@@ -59,10 +59,9 @@ class ETimeoutDialog extends CWidget
 	 */
 	public $keep_alive_url;
 	/**
-	 * @var string The url that will perform a POST request to kill the session. 
-	 * If no logout_url is defined it will just redirect to the url 
-	 * defined in logout_redirect_url.
-	 * Default: null
+	 * @var string The url that will perform a POST request to display an error message.
+	 * that your session has timed out and has been logged out. 
+	 * Default: Your session has timed out and you have been logged out automatically
 	 */
 	public $logout_url;
 	/**
