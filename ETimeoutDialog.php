@@ -61,7 +61,7 @@ class ETimeoutDialog extends CWidget
 	/**
 	 * @var string The url that will perform a POST request to display an error message.
 	 * that your session has timed out and has been logged out. 
-	 * Default: Your session has timed out and you have been logged out automatically
+	 * Default: null
 	 */
 	public $logout_url;
 	/**
@@ -70,7 +70,7 @@ class ETimeoutDialog extends CWidget
 	 * that they were when timedout and a timeout=t query param indicating 
 	 * if it was from a timeout, this value will not be set if the user clicked 
 	 * the 'No, Sign me out' button.
-	 * Default:
+	 * Default: /
 	 */
 	public $logout_redirect_url;
 	/**
