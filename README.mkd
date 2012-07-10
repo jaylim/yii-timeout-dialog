@@ -13,7 +13,8 @@ In your layout view:
 [php]
 <?php
     $this->widget('ext.timeout-dialog.ETimeoutDialog', array(
-        'timeout' => 90,
+        'timeout' => Yii::app()->getSession()->getTimeout(),
+        //'timeout' => 80, // uncomment to test (dialog should appear 20 sec after page load)
         'keep_alive_url' => $this->createUrl('/site/keepalive'),
         'logout_redirect_url' => $this->createUrl('/site/logout'),
     ));
