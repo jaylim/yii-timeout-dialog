@@ -1,5 +1,7 @@
 <?php
 
+Yii::import('zii.widgets.jui.CJuiWidget');
+
 /**
  * JQuery plugin that displays a timeout popover after a certain period of time.
  * @see http://www.yiiframework.com/extension/timeout-dialog
@@ -11,7 +13,7 @@
  * @version 1.0
  * @author Sopheak On
  */
-class ETimeoutDialog extends CWidget
+class ETimeoutDialog extends CJuiWidget
 {
 	/**
 	 * @var integer The number of your session timeout (in seconds).
@@ -87,10 +89,10 @@ class ETimeoutDialog extends CWidget
 	
 	public function init()
 	{
-		$assets = Yii::app()->getAssetManager()->publish(dirname(__FILE__) . '/assets');
+		parent::init();
 		
 		$cs = Yii::app()->getClientScript();
-		$cs->registerCoreScript('jquery.ui');
+		$assets = Yii::app()->getAssetManager()->publish(dirname(__FILE__) . '/assets');
 		$cs->registerScriptFile($assets.'/js/timeout-dialog.js');
 		$cs->registerCssFile($assets. '/css/timeout-dialog.css');
 	}

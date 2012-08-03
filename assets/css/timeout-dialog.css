@@ -39,7 +39,7 @@
 .timeout-dialog {
   padding: 15px;
   position: absolute;
-  background: #eeeeee url("../imgs/timeout-icon.png") no-repeat 15px 25px;
+  background: #eeeeee;
   border: 1px solid #ffffff;
   -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
@@ -48,24 +48,30 @@
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
+.timeout-dialog .ui-widget-header {
+	background: none;
+	border: none;
+}
 .timeout-dialog .ui-dialog-title {
   font-size: 16px;
   font-weight: bold;
-  display: block;
-  padding: 0 0 15px 0;
-  margin-left: 80px;
+}
+#timeout-dialog {
+  padding: 18px 5px;
+  background: #eeeeee url("../imgs/timeout-icon.png") no-repeat 15px 15px;
 }
 .timeout-dialog .ui-dialog-titlebar-close {
   display: none;
 }
 .timeout-dialog .ui-dialog-buttonpane {
   margin-top: 15px;
+  background: none;
 }
 .timeout-dialog  ~ .ui-widget-overlay {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #000;
+  background: #000;
   filter: alpha(opacity=40);
   -khtml-opacity: 0.4;
   -moz-opacity: 0.4;
