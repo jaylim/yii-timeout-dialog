@@ -7,11 +7,12 @@ Yii::import('zii.widgets.jui.CJuiWidget');
  * @see http://www.yiiframework.com/extension/timeout-dialog
  * @see https://github.com/digitick/yii-timeout-dialog
  *
- * @copyright © 2012, Digitick <www.digitick.net> (PHP)
- * @copyright © 2011, Rodrigo Neri <@rigoneri> (Javascript)
+ * @copyright © 2012 Digitick <www.digitick.net> (PHP)
+ * @copyright © 2011 Rodrigo Neri <@rigoneri> (Javascript)
  * @license MIT
- * @version 1.0
+ * @version 1.1
  * @author Sopheak On
+ * @author Ianaré Sévi
  */
 class ETimeoutDialog extends CJuiWidget
 {
