@@ -3,6 +3,9 @@
 .DS_Store*
 .Trash-*
 *~
+.Trashes
+Thumbs.db
+Session.vim
 
 # Compiled #
 *.war
@@ -13,11 +16,8 @@
 *.zip
 *.deb
 
-# Runtimes #
-protected/runtime/admin/*
-protected/runtime/web/*
-
-# Assets #
-public/web/assets/*
-public/web/promoter/home/*
-public/admin/assets/*
+# Editors
+.idea/
+nbproject/
+nbactions.xml
+nb-configuration.xml
