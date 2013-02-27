@@ -87,17 +87,17 @@ class ETimeoutDialog extends CJuiWidget
 	 * Default: 350
 	 */
 	public $dialog_width;
-	
+
 	public function init()
 	{
 		parent::init();
-		
+
 		$cs = Yii::app()->getClientScript();
 		$assets = Yii::app()->getAssetManager()->publish(dirname(__FILE__) . '/assets');
-		$cs->registerScriptFile($assets.'/js/timeout-dialog.js');
-		$cs->registerCssFile($assets. '/css/timeout-dialog.css');
+		$cs->registerScriptFile($assets . '/js/timeout-dialog.js');
+		$cs->registerCssFile($assets . '/css/timeout-dialog.css');
 	}
-	
+
 	public function run()
 	{
 		$options = array(
@@ -119,7 +119,8 @@ class ETimeoutDialog extends CJuiWidget
 				unset($options[$key]);
 		}
 		$options = CJSON::encode($options);
-		
+
 		Yii::app()->getClientScript()->registerScript('TimeoutDialog', "$.timeoutDialog($options);", CClientScript::POS_READY);
-	}	
+	}
+
 }
