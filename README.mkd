@@ -47,6 +47,8 @@ public function actionKeepAlive()
 _timeout-dialog.js_ was developed by rigoneri.
 
 ### Version History
+ * 1.2 — 2013-02-27
+   * Fix for Yii 1.1.13 jQuery UI update.
  * 1.1 — 2012-08-03
    * Make the widget inherit from CJuiWidget class for better integration.
    * Fixes and updates to CSS.
