@@ -34,13 +34,13 @@ class ETimeoutDialog extends CJuiWidget
 	 */
 	public $title;
 	/**
-	 * @var string The countdown message where {0} will be 
+	 * @var string The countdown message where {0} will be
 	 * used to enter the countdown value.
 	 * Default: 'You will be logged out in {0} seconds.'
 	 */
 	public $message;
 	/**
-	 * @var string The question message if they want to 
+	 * @var string The question message if they want to
 	 * continue using the site or not.
 	 * Default: 'Do you want to stay signed in?'
 	 */
@@ -56,28 +56,28 @@ class ETimeoutDialog extends CJuiWidget
 	 */
 	public $sign_out_button_text;
 	/**
-	 * @var string The url that will perform a GET request to keep the 
+	 * @var string The url that will perform a GET request to keep the
 	 * session alive. This GET expects a 'OK' plain HTTP response.
 	 * Default: /keep-alive
 	 */
 	public $keep_alive_url;
 	/**
 	 * @var string The url that will perform a POST request to display an error message.
-	 * that your session has timed out and has been logged out. 
+	 * that your session has timed out and has been logged out.
 	 * Default: null
 	 */
 	public $logout_url;
 	/**
-	 * @var string The redirect url after the logout happens, usually back 
-	 * to the login url. It will also contain a next query param with the url 
-	 * that they were when timedout and a timeout=t query param indicating 
-	 * if it was from a timeout, this value will not be set if the user clicked 
+	 * @var string The redirect url after the logout happens, usually back
+	 * to the login url. It will also contain a next query param with the url
+	 * that they were when timedout and a timeout=t query param indicating
+	 * if it was from a timeout, this value will not be set if the user clicked
 	 * the 'No, Sign me out' button.
 	 * Default: /
 	 */
 	public $logout_redirect_url;
 	/**
-	 * @var boolean A boolean value that indicates if the countdown will 
+	 * @var boolean A boolean value that indicates if the countdown will
 	 * restart when the user clicks the 'keep session alive' button.
 	 * Default: true
 	 */
@@ -123,4 +123,9 @@ class ETimeoutDialog extends CJuiWidget
 		Yii::app()->getClientScript()->registerScript('TimeoutDialog', "$.timeoutDialog($options);", CClientScript::POS_READY);
 	}
 
+	public static function className()
+	{
+		return get_class();
+	}
 }
+
